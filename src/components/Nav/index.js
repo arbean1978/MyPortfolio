@@ -1,4 +1,6 @@
-const Nav = (props) => {
+import React from "react";
+
+function Nav(props)  {
     const { navSections, setCurrentSection, currentSection } = props;
 
   return (

@@ -1,19 +1,20 @@
+import React from "react";
+
 import Nav from "../Nav";
 
-const Header = (props) => {
+function Header(props) {
 
   return (
-    <header>
-      <section className="header-container">
-        <h1 className="heading">Aaron</h1>
-        <h2 className="sub-heading"></h2>
-      </section>
+    <div>
+      <div className="div-container h-24 bg-gray-400">
+        <h1 className="heading div-container h-24 bg-gray-400">Aaron Bean</h1>
+      </div>
       <Nav
         navSections={props.navSections}
         setCurrentSection={props.setCurrentSection}
         currentSection={props.currentSection}
       ></Nav>
-    </header>
+    </div>
   );
 };
 

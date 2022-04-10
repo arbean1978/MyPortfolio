@@ -2,7 +2,7 @@ import React, { useState } from "react";
 const nodemailer = require("nodemailer");
 require("dotenv").config();
 
-const Contact = () => {
+function Contact() {
   const [formState, setFormState] = useState({
     firstName: "",
     lastName: "",
@@ -64,7 +64,7 @@ const Contact = () => {
 
   return (
     <section className="contact-container flex-row">
-      <h2 className="primary-section-title">// Contact //</h2>
+      <h2 className="primary-section-title">Contact</h2>
       <form
         className="contact-form flex-row"
         onSubmit={handleFormSubmit}

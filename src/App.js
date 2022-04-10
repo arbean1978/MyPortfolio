@@ -1,11 +1,13 @@
-import './App.css';
-import { useState } from 'react';
+
+import React,{ useState } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
+//import './App.css';
+import './index.css';
 
 function App() {
   const [currentSection, setCurrentSection ] = useState("About Me");
@@ -36,11 +38,15 @@ function App() {
 
   }
   return (
-    <main className="content">
-    <Header currentSection={currentSection} setCurrentSection={setCurrentSection} navSections={navSections} />
-        {displaySection()}
-    <Footer />
-    </main>
+    <div className="content">
+
+    <Header currentSection={currentSection} setCurrentSection={setCurrentSection} navSections={navSections}></Header>
+
+      <main>  {displaySection()}</main>
+
+    <Footer></Footer>
+    
+    </div>
   );
 }
 
