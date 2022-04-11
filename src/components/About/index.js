@@ -4,8 +4,8 @@ import meImage from "../../assets/images/Me.jpg"
 
       function About  ()  {
             return (
-              <section className="flex flex-row about-container">
-                  <h2 className="primary-section-title"> About Me</h2>
+              <section className="flex flex-row about">
+                  <h2 className="primary"> About Me</h2>
                 <section className="flex-row section-info about-info">
                   <section className="bio-img">
                     <img

@@ -63,8 +63,8 @@ function Contact() {
   };
 
   return (
-    <section className="contact-container flex-row">
-      <h2 className="primary-section-title">Contact</h2>
+    <section className="contact flex-row">
+      <h2 className="primary">Contact Me</h2>
       <form
         className="contact-form flex-row"
         onSubmit={handleFormSubmit}
@@ -118,7 +118,7 @@ function Contact() {
           ></textarea>
         </div>
         <div>
-        <button type="submit">Submit</button>
+        <button className="button" type="submit">Submit</button>
         </div>
       </form>
     </section>

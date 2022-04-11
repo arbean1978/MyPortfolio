@@ -4,7 +4,7 @@ function Nav(props)  {
     const { navSections, setCurrentSection, currentSection } = props;
 
   return (
-    <nav>
+    <div className="nav">
       <ul className="nav-list">
         {navSections.map((section) => (
           <li className="nav-item" key={section}>
@@ -23,7 +23,7 @@ function Nav(props)  {
           </li>
         ))}
       </ul>
-    </nav>
+    </div>
   );
 };
 

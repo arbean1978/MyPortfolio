@@ -1,3 +1,101 @@
-@tailwind base;
+{/*@tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;*/}
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: full;
+}
+
+.container {
+    background-image: linear-gradient(to right, white, rgb(90, 86, 86));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: black solid;
+    list-style-type: none;
+}
+
+.header-title {
+    font-family: 'Oldenburg';
+}
+
+.nav {
+    font-family: 'Oldenburg';
+    background-color: rgb(113, 113, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-list {
+    
+   
+   display: inline;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    list-style-type: none;
+}
+
+.nav-item {
+    color: white;
+    cursor: pointer;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    font-family: 'Oldenburg';
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+ 
+
+}
+
+.button {
+    display: flex;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+}
+
+label, input {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 125px;
+}
+
+.portfolio-list {
+    list-style-type: none;
+}
+
+.project-img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+  }
+  
